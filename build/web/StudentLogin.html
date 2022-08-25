@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: "Times New Roman", Times, serif;
+            }
+            
+            .login-form{
+                width: 600px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                align-content: center;
+                background-color: white;
+                border-radius: 25px;
+            }
+            .login-form h1{
+                font-size: 30px;
+                text-align: center;
+                text-transform: capitalize;
+                margin: 50px 80px;
+                color: white;
+                background-color: blue;
+                border-radius: 20px;
+                padding: 5px;
+            }
+            .login-form p{
+                font-size: 30px;
+                margin: 5px 50px 5px 50px;
+                text-transform: capitalize;
+            }
+            .login-form input{
+                font-size: 16px;
+                width: 80%;
+                padding: 15px 10px;
+                margin: 5px 50px 5px 50px;
+                outline: none;
+                border-radius: 5px;
+            }
+            .login-form button{
+                font-size: 18px;
+                font-weight: bold;
+                margin: 5px 140px 5px 140px;
+                padding: 10px 15px 15px 15px;
+                width: 50%;
+                border: 0;
+                border-radius: 5px;
+                color: white;
+                background-color: tomato;
+            }
+            .login-form #back_button input{
+                font-size: 18px;
+                font-weight: bold;
+                margin: 5px 140px 10px 140px;
+                padding: 10px 15px 15px 15px;
+                width: 50%;
+                border-radius: 5px;
+                border: 0;
+                color: white;
+                background-color: tomato;
+            }
+            .banner {
+                padding: 20px;
+                text-align: center;
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                color: white;
+                font-size: 15px;
+            }
+            body{
+                background-color: #dee1ed;
+                align-content: center;
+            }
+            .login-form button:hover{
+                background-color: greenyellow;
+                color: black;
+                font-size: 30px;
+            }
+            .login-form #back_button input:hover{
+                background-color: greenyellow;
+                color: black;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <h1>STUDENT TECHNICAL SUPPORT SYSTEM</h1>
+        </div>
+        
+        <div class="login-form">
+            <h1>Student Login</h1>
+            <form action="StudentLoginServlet" method="post">
+                <p>username</p>
+                <input type="text" name="username" placeholder="username">
+                <p>password</p>
+                <input type="password" name="password" placeholder="password">
+                <button type="submit" onclick="form.action = StudentLoginServlet">Login</button>
+            </form>
+            <form id = "back_button">
+                <input type="button" value="Back" onclick="history.back()">
+            </form>
+        </div>
+    </body>
+</html>

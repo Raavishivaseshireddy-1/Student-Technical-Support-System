@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: "Times New Roman", Times, serif;
+            }
+            .banner {
+                padding: 20px;
+                text-align: center;
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                color: white;
+                font-size: 15px;
+            }
+            body{
+                background-color: #dee1ed;
+                align-content: center;
+            }
+            .banner input{
+                font-size: 20px;
+                font-weight: bold;
+                padding: 8px;
+                width: 5%;
+                border: 0;
+                color: white;
+                background-color: #f00;
+                float: right;
+                align-content: center;
+            }
+            .banner input:hover{
+                background: greenyellow;
+                color: black;
+            }
+            .container{
+                position: relative;
+                width: 2350px;
+                height: 300px;
+                margin: 100px 100px 100px 100px;
+                padding-bottom: 500px;
+                background: blue;
+
+                
+            }
+            .container .box{
+                position: relative;
+                width: calc(400px - 20px);
+                height: calc(300px - 20px);
+                background: #000;
+                float: left;
+                margin: 100px;
+                box-sizing: border-box;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .container .box .icon{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #f00;
+                transition: 0.5s;
+                z-index: 1;
+            }
+            .container .box:hover .icon{
+                top: 5px;
+                padding: 8px;
+                margin: 5%;
+                right: calc(20% - 100px);
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                
+            }
+            .container .box .icon .fa{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 80px;
+                transition: 0.5s;
+                color: #fff;
+            }
+            .container .box .content{
+                position: absolute;
+                top: 100px;
+                height: calc(100% - 100px);
+                text-align: center;
+                padding: 10px 5px 0 50px;
+                box-sizing: border-box;
+                font-size: 30px;
+                color: white;
+                
+            }
+            .container .box .content a{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <input type="submit" name="Logout" value="Logout" onclick="history.back()">
+            <h1>STUDENT TECHNICAL SUPPORT SYSTEM</h1>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="icon">
+                   <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <a href="ViewCompanyExperiences.jsp">View</a>
+                    <p>" See Shared Experience "</p>
+                </div>   
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <a href="PostExperience.jsp">Post</a>
+                    <p>" Share your Experience "</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <a href="PostQuery.html">Query</a>
+                    <p>" Post your Queries "</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <h3>Profile</h3>
+                    <p>" Change Password "</p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

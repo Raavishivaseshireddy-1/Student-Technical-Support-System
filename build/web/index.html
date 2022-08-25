@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: "Times New Roman", Times, serif;
+            }
+            .banner {
+                padding: 20px;
+                text-align: center;
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                color: white;
+                font-size: 15px;
+            }
+            
+            .login{
+                width: 450px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                align-content: center;
+                background-color: white;
+                border-radius: 25px;
+            }
+            .login h1{
+                font-size: 30px;
+                text-align: center;
+                text-transform: capitalize;
+                margin: 50px 80px;
+                padding: 20px;
+                color: white;
+                background: blue;
+            }
+            
+            body{
+                background-color: #dee1ed;
+                align-content: center;
+            }
+            
+            .login input{
+                font-size: 30px;
+                font-weight: bold;
+                margin: 50px 80px;
+                padding: 45px;
+                width: 65%;
+                border-radius: 25px;
+                border: 0;
+                color: white;
+                background-color: tomato;
+                align-content: center;
+            }
+            .login input:hover{
+                background: greenyellow;
+                color: black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <h1>STUDENT TECHNICAL SUPPORT SYSTEM</h1>
+        </div>
+        
+        <div class="login">
+            <form>
+                <h1>Login</h1>
+                <input type="submit" name="studentlogin" value="StudentLogin" onclick="form.action='StudentLogin.html'">
+                <input type="submit" name="employeelogin" value="EmployeeLogin" onclick="form.action='EmployeeLogin.html'">
+            </form> 
+        </div>
+    </body>
+</html>
